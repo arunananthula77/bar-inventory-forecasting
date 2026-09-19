@@ -1,0 +1,10 @@
+Check,Rows,Action
+Raw rows loaded,6575,-
+Missing Purchase (set to 0),0,filled with 0
+Missing Consumed derived from balances,0,Opening + Purchase - Closing
+"Rows with unparseable time / missing bar, brand or consumption",0,dropped
+Bar/Brand name spelling variants unified,0,canonical spelling applied
+Exact duplicate rows,0,dropped
+Negative Consumed values,0,clipped to 0 for demand
+Rows violating Closing = Opening + Purchase - Consumed,0,"flagged, kept (0.00% of consumed volume)"
+Opening != previous closing (same bar-brand),0,flagged only (unrecorded movements/transfers)
